@@ -39,3 +39,7 @@ body {
 .blue {
   color: rgb(8, 8, 73);
 }
+.button {
+  position: relative;
+  bottom: 0;
+}
