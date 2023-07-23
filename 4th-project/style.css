@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box !important;
+  /* margin: 0;
+  padding: 0; */
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: ivory;
+}
+.items {
+  display: flex;
+  gap: 15%;
+  justify-content: space-between;
+  list-style-type: none;
+}
+ul li {
+  text-decoration: none;
+  list-style-type: none;
+}
+.hide {
+  display: none;
+}
+#icon {
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+.dropdown {
+  background-color: black;
+  /* transition: ease-in-out 2s linear; */
+}
+.dropdown ul li a {
+  color: azure;
+  text-decoration: none;
+}
