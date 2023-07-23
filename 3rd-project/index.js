@@ -75,6 +75,9 @@ window.onload = renderCard(data, num)
 
 function backClick() {
   num--
+  if (num < 0) {
+    num = data.length - 1
+  }
   clear()
   renderCard(data, num)
 }
@@ -84,6 +87,9 @@ function nextClick() {
   //     num = 0
   //   }
   num++
+  if (num > data.length - 1) {
+    num = 0
+  }
   clear()
   renderCard(data, num)
 }
