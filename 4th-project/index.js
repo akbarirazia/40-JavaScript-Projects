@@ -6,15 +6,15 @@ const dropdown = document.querySelector(".dropdown")
 function toggle() {
   let parent = items.parentNode
   if (window.innerWidth < 600) {
-    items.classList.add("hide")
-    icon.classList.remove("hide")
+    items.classList.toggle("hide")
+    // icon.classList.remove("hide")
     parent.appendChild(icon)
   } else if (window.innerWidth > 600) {
     console.log("here")
-    icon.classList.add("hide")
+    // icon.classList.add("hide")
     parent.removeChild(icon)
 
-    items.classList.remove("hide")
+    items.classList.toggle("hide")
   }
 }
 icon.addEventListener("click", () => {

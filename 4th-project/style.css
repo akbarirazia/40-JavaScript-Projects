@@ -20,6 +20,8 @@ ul li {
 }
 .hide {
   display: none;
+  height: 0;
+  overflow: none !important;
 }
 #icon {
   display: grid;
